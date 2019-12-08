@@ -1,4 +1,4 @@
-class AddCountriesRegions < ActiveRecord::Migration
+class AddCountriesRegions < ActiveRecord::Migration[5.2]
   def up
   	#Typ_Country
  #  	TypCountry.create(id: 4, iso: 'AF',  iso3:'AFG', fips:'AF',  country:'Afghanistan', continent: 'AS', currency_code:'AFN', currency_name:'Afghani', phone_prefix:'93', postal_code:'', languages:'fa-AF,ps,uz-AF,tk', geonameid:'1149361')
