@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_06_192109) do
+ActiveRecord::Schema.define(version: 2019_12_08_004946) do
 
   create_table "org_companies", force: :cascade do |t|
     t.string "name", null: false
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 2019_12_06_192109) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["typ_company_id"], name: "index_org_companies_on_typ_company_id"
+  end
+
+  create_table "typ_regions", force: :cascade do |t|
+    t.string "name"
+    t.string "timezone"
+    t.integer "typ_country_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["typ_country_id"], name: "index_typ_regions_on_typ_country_id"
   end
 
 end
