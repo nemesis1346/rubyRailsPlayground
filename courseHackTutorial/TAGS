@@ -1,0 +1,451 @@
+
+config/application.rb,168
+module RubyTrainingRubyTraining10,0
+  class Application < Rails::ApplicationApplication11,0
+  class Application < Rails::ApplicationRubyTraining::Application11,0
+
+test/controllers/catalogues_controller_test.rb,94
+class CataloguesControllerTest < ActionDispatch::IntegrationTestCataloguesControllerTest3,0
+
+test/controllers/exams_controller_test.rb,84
+class ExamsControllerTest < ActionDispatch::IntegrationTestExamsControllerTest3,0
+
+test/application_system_test_case.rb,95
+class ApplicationSystemTestCase < ActionDispatch::SystemTestCaseApplicationSystemTestCase3,0
+
+test/test_helper.rb,101
+class ActiveSupport::TestCaseTestCase5,0
+class ActiveSupport::TestCaseActiveSupport::TestCase5,0
+
+test/models/org_company_test.rb,66
+class OrgCompanyTest < ActiveSupport::TestCaseOrgCompanyTest3,0
+
+app/controllers/org_people/passwords_controller.rb,499
+class OrgPeople::PasswordsController < Devise::PasswordsControllerPasswordsController3,0
+class OrgPeople::PasswordsController < Devise::PasswordsControllerOrgPeople::PasswordsController3,0
+  def newnew5,0
+  def createcreate10,0
+  def editedit15,0
+  def updateupdate20,0
+  def after_resetting_password_path_for(resource)after_resetting_password_path_for26,0
+  def after_sending_reset_password_instructions_path_for(resource_name)after_sending_reset_password_instructions_path_for31,0
+
+app/controllers/org_people/registrations_controller.rb,433
+class OrgPeople::RegistrationsController < Devise::RegistrationsControllerRegistrationsController1,0
+class OrgPeople::RegistrationsController < Devise::RegistrationsControllerOrgPeople::RegistrationsController1,0
+    def newnew6,0
+    def createcreate11,0
+    def editedit16,0
+    def updateupdate21,0
+    def destroydestroy26,0
+    def cancelcancel35,0
+    def configure_sign_up_paramsconfigure_sign_up_params42,0
+
+app/controllers/org_people/unlocks_controller.rb,181
+class OrgPeople::UnlocksController < Devise::UnlocksControllerUnlocksController3,0
+class OrgPeople::UnlocksController < Devise::UnlocksControllerOrgPeople::UnlocksController3,0
+
+app/controllers/org_people/confirmations_controller.rb,501
+class OrgPeople::ConfirmationsController < Devise::ConfirmationsControllerConfirmationsController3,0
+class OrgPeople::ConfirmationsController < Devise::ConfirmationsControllerOrgPeople::ConfirmationsController3,0
+  def newnew5,0
+  def createcreate10,0
+  def showshow15,0
+  def after_resending_confirmation_instructions_path_for(resource_name)after_resending_confirmation_instructions_path_for22,0
+  def after_confirmation_path_for(resource_name, resource)after_confirmation_path_for27,0
+
+app/controllers/org_people/sessions_controller.rb,257
+class OrgPeople::SessionsController < Devise::SessionsControllerSessionsController3,0
+class OrgPeople::SessionsController < Devise::SessionsControllerOrgPeople::SessionsController3,0
+  def newnew7,0
+  def createcreate12,0
+  def destroydestroy17,0
+
+app/controllers/org_people/omniauth_callbacks_controller.rb,241
+class OrgPeople::OmniauthCallbacksController < Devise::OmniauthCallbacksControllerOmniauthCallbacksController3,0
+class OrgPeople::OmniauthCallbacksController < Devise::OmniauthCallbacksControllerOrgPeople::OmniauthCallbacksController3,0
+
+app/controllers/exams_controller.rb,66
+class ExamsController < ApplicationControllerExamsController1,0
+
+app/controllers/catalogues_controller.rb,122
+class CataloguesController < ApplicationControllerCataloguesController1,0
+    def indexindex3,0
+    def showshow7,0
+
+app/controllers/application_controller.rb,219
+class ApplicationController < ActionController::BaseApplicationController3,0
+  def after_sign_in_path_for(_resource)after_sign_in_path_for8,0
+  def configure_permitted_parametersconfigure_permitted_parameters23,0
+
+app/jobs/application_job.rb,58
+class ApplicationJob < ActiveJob::BaseApplicationJob1,0
+
+app/mailers/application_mailer.rb,67
+class ApplicationMailer < ActionMailer::BaseApplicationMailer1,0
+
+app/channels/application_cable/connection.rb,195
+module ApplicationCableApplicationCable1,0
+  class Connection < ActionCable::Connection::BaseConnection2,0
+  class Connection < ActionCable::Connection::BaseApplicationCable::Connection2,0
+
+app/channels/application_cable/channel.rb,177
+module ApplicationCableApplicationCable1,0
+  class Channel < ActionCable::Channel::BaseChannel2,0
+  class Channel < ActionCable::Channel::BaseApplicationCable::Channel2,0
+
+app/models/typ_company.rb,233
+class TypCompany < ActiveRecord::BaseTypCompany1,0
+	has_many :org_companiesorg_companies2,0
+	has_many :org_companiesorg_companies=2,0
+	has_many :org_companiesorg_companie_ids2,0
+	has_many :org_companiesorg_companie_ids=2,0
+
+app/models/trx_order_item.rb,1600
+class TrxOrderItem < ActiveRecord::BaseTrxOrderItem1,0
+	belongs_to :org_company, foreign_key: "org_company_id"org_company2,0
+	belongs_to :org_company, foreign_key: "org_company_id"org_company=2,0
+	belongs_to :org_company, foreign_key: "org_company_id"build_org_company2,0
+	belongs_to :org_company, foreign_key: "org_company_id"create_org_company2,0
+	belongs_to :org_company, foreign_key: "org_company_id"create_org_company!2,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"TrxOrder3,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"TrxOrder=3,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"build_TrxOrder3,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"create_TrxOrder3,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"create_TrxOrder!3,0
+	belongs_to :OrgProduct, foreign_key: "org_product_id"OrgProduct4,0
+	belongs_to :OrgProduct, foreign_key: "org_product_id"OrgProduct=4,0
+	belongs_to :OrgProduct, foreign_key: "org_product_id"build_OrgProduct4,0
+	belongs_to :OrgProduct, foreign_key: "org_product_id"create_OrgProduct4,0
+	belongs_to :OrgProduct, foreign_key: "org_product_id"create_OrgProduct!4,0
+	belongs_to :ShippingAddress, foreign_key: "shipping_address_id"ShippingAddress5,0
+	belongs_to :ShippingAddress, foreign_key: "shipping_address_id"ShippingAddress=5,0
+	belongs_to :ShippingAddress, foreign_key: "shipping_address_id"build_ShippingAddress5,0
+	belongs_to :ShippingAddress, foreign_key: "shipping_address_id"create_ShippingAddress5,0
+	belongs_to :ShippingAddress, foreign_key: "shipping_address_id"create_ShippingAddress!5,0
+
+app/models/typ_position.rb,130
+class TypPosition < ActiveRecord::BaseTypPosition1,0
+	has_many :org_peopleorg_people2,0
+	has_many :org_peopleorg_people=2,0
+
+app/models/typ_tax.rb,241
+class TypTax < ActiveRecord::BaseTypTax1,0
+	has_many :typ_sales_taxestyp_sales_taxes2,0
+	has_many :typ_sales_taxestyp_sales_taxes=2,0
+	has_many :typ_sales_taxestyp_sales_taxe_ids2,0
+	has_many :typ_sales_taxestyp_sales_taxe_ids=2,0
+
+app/models/typ_subcategory.rb,630
+class TypSubcategory < ActiveRecord::BaseTypSubcategory1,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"typ_category2,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"typ_category=2,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"build_typ_category2,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"create_typ_category2,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"create_typ_category!2,0
+	has_many :org_productsorg_products3,0
+	has_many :org_productsorg_products=3,0
+	has_many :org_productsorg_product_ids3,0
+	has_many :org_productsorg_product_ids=3,0
+
+app/models/typ_contact.rb,225
+class TypContact < ActiveRecord::BaseTypContact1,0
+	has_many :org_contactsorg_contacts2,0
+	has_many :org_contactsorg_contacts=2,0
+	has_many :org_contactsorg_contact_ids2,0
+	has_many :org_contactsorg_contact_ids=2,0
+
+app/models/trx_order_fee.rb,397
+class TrxOrderFee < ActiveRecord::BaseTrxOrderFee1,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"TrxOrder2,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"TrxOrder=2,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"build_TrxOrder2,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"create_TrxOrder2,0
+	belongs_to :TrxOrder, foreign_key: "trx_order_id"create_TrxOrder!2,0
+
+app/models/trx_order.rb,1030
+class TrxOrder < ActiveRecord::BaseTrxOrder1,0
+	has_many :TrxOrderItemTrxOrderItem2,0
+	has_many :TrxOrderItemTrxOrderItem=2,0
+	has_many :TrxOrderFeeTrxOrderFee3,0
+	has_many :TrxOrderFeeTrxOrderFee=3,0
+	belongs_to :bill_to_contact, class_name: 'OrgContact'bill_to_contact4,0
+	belongs_to :bill_to_contact, class_name: 'OrgContact'bill_to_contact=4,0
+	belongs_to :bill_to_contact, class_name: 'OrgContact'build_bill_to_contact4,0
+	belongs_to :bill_to_contact, class_name: 'OrgContact'create_bill_to_contact4,0
+	belongs_to :bill_to_contact, class_name: 'OrgContact'create_bill_to_contact!4,0
+	belongs_to :ship_to_contact, class_name: 'ShippingAddress'ship_to_contact5,0
+	belongs_to :ship_to_contact, class_name: 'ShippingAddress'ship_to_contact=5,0
+	belongs_to :ship_to_contact, class_name: 'ShippingAddress'build_ship_to_contact5,0
+	belongs_to :ship_to_contact, class_name: 'ShippingAddress'create_ship_to_contact5,0
+	belongs_to :ship_to_contact, class_name: 'ShippingAddress'create_ship_to_contact!5,0
+
+app/models/typ_sales_tax.rb,744
+class TypSalesTax < ActiveRecord::BaseTypSalesTax1,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"typ_region2,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"typ_region=2,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"build_typ_region2,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"create_typ_region2,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"create_typ_region!2,0
+	belongs_to :typ_tax, foreign_key: "typ_tax_id"typ_tax3,0
+	belongs_to :typ_tax, foreign_key: "typ_tax_id"typ_tax=3,0
+	belongs_to :typ_tax, foreign_key: "typ_tax_id"build_typ_tax3,0
+	belongs_to :typ_tax, foreign_key: "typ_tax_id"create_typ_tax3,0
+	belongs_to :typ_tax, foreign_key: "typ_tax_id"create_typ_tax!3,0
+
+app/models/typ_fee.rb,124
+class TypFee < ActiveRecord::BaseTypFee1,0
+	has_many :TrxOrderFeeTrxOrderFee2,0
+	has_many :TrxOrderFeeTrxOrderFee=2,0
+
+app/models/typ_country.rb,207
+class TypCountry < ActiveRecord::BaseTypCountry1,0
+	has_many :org_contactorg_contact2,0
+	has_many :org_contactorg_contact=2,0
+	has_many :typ_regiontyp_region3,0
+	has_many :typ_regiontyp_region=3,0
+
+app/models/typ_region.rb,801
+class TypRegion < ActiveRecord::BaseTypRegion1,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"typ_country2,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"typ_country=2,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"build_typ_country2,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"create_typ_country2,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"create_typ_country!2,0
+	has_many :org_contactsorg_contacts3,0
+	has_many :org_contactsorg_contacts=3,0
+	has_many :org_contactsorg_contact_ids3,0
+	has_many :org_contactsorg_contact_ids=3,0
+	has_many :typ_sales_taxestyp_sales_taxes4,0
+	has_many :typ_sales_taxestyp_sales_taxes=4,0
+	has_many :typ_sales_taxestyp_sales_taxe_ids4,0
+	has_many :typ_sales_taxestyp_sales_taxe_ids=4,0
+
+app/models/application_record.rb,67
+class ApplicationRecord < ActiveRecord::BaseApplicationRecord1,0
+
+app/models/org_contact.rb,2165
+class OrgContact < ActiveRecord::BaseOrgContact1,0
+	belongs_to :org_person, foreign_key: "org_person_id"org_person2,0
+	belongs_to :org_person, foreign_key: "org_person_id"org_person=2,0
+	belongs_to :org_person, foreign_key: "org_person_id"build_org_person2,0
+	belongs_to :org_person, foreign_key: "org_person_id"create_org_person2,0
+	belongs_to :org_person, foreign_key: "org_person_id"create_org_person!2,0
+	belongs_to :org_company, foreign_key: "org_company_id"org_company3,0
+	belongs_to :org_company, foreign_key: "org_company_id"org_company=3,0
+	belongs_to :org_company, foreign_key: "org_company_id"build_org_company3,0
+	belongs_to :org_company, foreign_key: "org_company_id"create_org_company3,0
+	belongs_to :org_company, foreign_key: "org_company_id"create_org_company!3,0
+	belongs_to :typ_contact, foreign_key: "typ_contact_id"typ_contact4,0
+	belongs_to :typ_contact, foreign_key: "typ_contact_id"typ_contact=4,0
+	belongs_to :typ_contact, foreign_key: "typ_contact_id"build_typ_contact4,0
+	belongs_to :typ_contact, foreign_key: "typ_contact_id"create_typ_contact4,0
+	belongs_to :typ_contact, foreign_key: "typ_contact_id"create_typ_contact!4,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"typ_country5,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"typ_country=5,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"build_typ_country5,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"create_typ_country5,0
+	belongs_to :typ_country, foreign_key: "typ_country_id"create_typ_country!5,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"typ_region6,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"typ_region=6,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"build_typ_region6,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"create_typ_region6,0
+	belongs_to :typ_region, foreign_key: "typ_region_id"create_typ_region!6,0
+	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/iVALID_EMAIL_REGEX12,0
+	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/iOrgContact::VALID_EMAIL_REGEX12,0
+	def addressaddress22,0
+
+app/models/org_product.rb,1274
+class OrgProduct < ActiveRecord::BaseOrgProduct1,0
+	belongs_to :org_company, foreign_key: "org_company_id"org_company2,0
+	belongs_to :org_company, foreign_key: "org_company_id"org_company=2,0
+	belongs_to :org_company, foreign_key: "org_company_id"build_org_company2,0
+	belongs_to :org_company, foreign_key: "org_company_id"create_org_company2,0
+	belongs_to :org_company, foreign_key: "org_company_id"create_org_company!2,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"typ_category3,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"typ_category=3,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"build_typ_category3,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"create_typ_category3,0
+	belongs_to :typ_category, foreign_key: "typ_category_id"create_typ_category!3,0
+	belongs_to :typ_subcategory, foreign_key: "typ_subcategory_id"typ_subcategory4,0
+	belongs_to :typ_subcategory, foreign_key: "typ_subcategory_id"typ_subcategory=4,0
+	belongs_to :typ_subcategory, foreign_key: "typ_subcategory_id"build_typ_subcategory4,0
+	belongs_to :typ_subcategory, foreign_key: "typ_subcategory_id"create_typ_subcategory4,0
+	belongs_to :typ_subcategory, foreign_key: "typ_subcategory_id"create_typ_subcategory!4,0
+
+app/models/org_person.rb,283
+class OrgPerson < ActiveRecord::BaseOrgPerson1,0
+	has_and_belongs_to_many :org_contactsorg_contacts6,0
+	has_and_belongs_to_many :org_contactsorg_contacts=6,0
+	has_and_belongs_to_many :org_contactsorg_contact_ids6,0
+	has_and_belongs_to_many :org_contactsorg_contact_ids=6,0
+
+app/models/typ_category.rb,322
+class TypCategory < ActiveRecord::BaseTypCategory1,0
+	has_many :org_productsorg_products2,0
+	has_many :org_productsorg_products=2,0
+	has_many :org_productsorg_product_ids2,0
+	has_many :org_productsorg_product_ids=2,0
+	has_many :typ_subcategorytyp_subcategory3,0
+	has_many :typ_subcategorytyp_subcategory=3,0
+
+app/models/org_company.rb,1557
+class OrgCompany < ActiveRecord::BaseOrgCompany1,0
+	has_and_belongs_to_many :org_contactsorg_contacts2,0
+	has_and_belongs_to_many :org_contactsorg_contacts=2,0
+	has_and_belongs_to_many :org_contactsorg_contact_ids2,0
+	has_and_belongs_to_many :org_contactsorg_contact_ids=2,0
+	has_many :org_personsorg_persons3,0
+	has_many :org_personsorg_persons=3,0
+	has_many :org_personsorg_person_ids3,0
+	has_many :org_personsorg_person_ids=3,0
+	has_many :org_productsorg_products4,0
+	has_many :org_productsorg_products=4,0
+	has_many :org_productsorg_product_ids4,0
+	has_many :org_productsorg_product_ids=4,0
+	has_one :typ_feetyp_fee5,0
+	has_one :typ_feetyp_fee=5,0
+	has_one :typ_feebuild_typ_fee5,0
+	has_one :typ_feecreate_typ_fee5,0
+	has_one :typ_feecreate_typ_fee!5,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"typ_company6,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"typ_company=6,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"build_typ_company6,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"create_typ_company6,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"create_typ_company!6,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"typ_company7,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"typ_company=7,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"build_typ_company7,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"create_typ_company7,0
+	belongs_to :typ_company, foreign_key: "typ_company_id"create_typ_company!7,0
+
+app/helpers/exams_helper.rb,35
+module ExamsHelperExamsHelper1,0
+
+app/helpers/application_helper.rb,47
+module ApplicationHelperApplicationHelper1,0
+
+app/helpers/devise_helper.rb,95
+module DeviseHelperDeviseHelper1,0
+    def devise_error_messages!devise_error_messages!2,0
+
+app/helpers/catalogues_helper.rb,45
+module CataloguesHelperCataloguesHelper1,0
+
+db/migrate/20150926205609_create_typ_countries.rb,103
+class CreateTypCountries < ActiveRecord::Migration[5.2]CreateTypCountries1,0
+  def changechange2,0
+
+db/migrate/20150927003026_add_typ_positions.rb,110
+class AddTypPositions < ActiveRecord::Migration[5.2]AddTypPositions1,0
+  def upup2,0
+  def downdown10,0
+
+db/migrate/20150926210144_create_typ_subcategories.rb,111
+class CreateTypSubcategories < ActiveRecord::Migration[5.2]CreateTypSubcategories1,0
+  def changechange2,0
+
+db/migrate/20150927004902_add_typ_fees.rb,87
+class AddTypFees < ActiveRecord::Migration[5.2]AddTypFees1,0
+  def changechange2,0
+
+db/migrate/20150927003615_add_typ_contacts.rb,87
+class AddTypContacts < ActiveRecord::Migration[5.2]AddTypContacts1,0
+  def upup2,0
+
+db/migrate/20150926205806_create_typ_taxes.rb,95
+class CreateTypTaxes < ActiveRecord::Migration[5.2]CreateTypTaxes1,0
+  def changechange2,0
+
+db/migrate/20150926210056_create_trx_order_items.rb,105
+class CreateTrxOrderItems < ActiveRecord::Migration[5.2]CreateTrxOrderItems1,0
+  def changechange2,0
+
+db/migrate/20150927003737_add_typ_sales_taxes.rb,91
+class AddTypSalesTaxes < ActiveRecord::Migration[5.2]AddTypSalesTaxes1,0
+  def upup2,0
+
+db/migrate/20150926205633_create_typ_positions.rb,103
+class CreateTypPositions < ActiveRecord::Migration[5.2]CreateTypPositions1,0
+  def changechange2,0
+
+db/migrate/20150926205745_create_typ_regions.rb,99
+class CreateTypRegions < ActiveRecord::Migration[5.2]CreateTypRegions1,0
+  def changechange2,0
+
+db/migrate/20150926205724_create_typ_companies.rb,103
+class CreateTypCompanies < ActiveRecord::Migration[5.2]CreateTypCompanies1,0
+  def changechange2,0
+
+db/migrate/20150926210125_create_typ_fees.rb,93
+class CreateTypFees < ActiveRecord::Migration[5.2]CreateTypFees1,0
+  def changechange2,0
+
+db/migrate/20150926210007_create_trx_order_fees.rb,103
+class CreateTrxOrderFees < ActiveRecord::Migration[5.2]CreateTrxOrderFees1,0
+  def changechange2,0
+
+db/migrate/20150926205756_create_typ_contacts.rb,101
+class CreateTypContacts < ActiveRecord::Migration[5.2]CreateTypContacts1,0
+  def changechange2,0
+
+db/migrate/20150926210036_create_org_companies_org_contacts_join_table.rb,143
+class CreateOrgCompaniesOrgContactsJoinTable < ActiveRecord::Migration[5.2]CreateOrgCompaniesOrgContactsJoinTable1,0
+  def changechange2,0
+
+db/migrate/20150926205620_create_trx_orders.rb,97
+class CreateTrxOrders < ActiveRecord::Migration[5.2]CreateTrxOrders1,0
+  def changechange2,0
+
+db/migrate/20150926205708_create_org_contacts_org_people_join_table.rb,137
+class CreateOrgContactsOrgPeopleJoinTable < ActiveRecord::Migration[5.2]CreateOrgContactsOrgPeopleJoinTable1,0
+  def changechange2,0
+
+db/migrate/20150927003722_add_typ_taxes.rb,81
+class AddTypTaxes < ActiveRecord::Migration[5.2]AddTypTaxes1,0
+  def upup2,0
+
+db/migrate/20151010084118_add_devise_to_org_people.rb,130
+class AddDeviseToOrgPeople < ActiveRecord::Migration[5.2]AddDeviseToOrgPeople1,0
+  def self.upup2,0
+  def self.downdown44,0
+
+db/migrate/20150926205556_create_org_products.rb,101
+class CreateOrgProducts < ActiveRecord::Migration[5.2]CreateOrgProducts1,0
+  def changechange2,0
+
+db/migrate/20150927003626_add_typ_companies.rb,89
+class AddTypCompanies < ActiveRecord::Migration[5.2]AddTypCompanies1,0
+  def upup2,0
+
+db/migrate/20150926205513_create_org_companies.rb,103
+class CreateOrgCompanies < ActiveRecord::Migration[5.2]CreateOrgCompanies1,0
+  def changechange2,0
+
+db/migrate/20150926205357_create_org_people.rb,97
+class CreateOrgPeople < ActiveRecord::Migration[5.2]CreateOrgPeople1,0
+  def changechange2,0
+
+db/migrate/20150927002823_add_countries_regions.rb,97
+class AddCountriesRegions < ActiveRecord::Migration[5.2]AddCountriesRegions1,0
+  def upup2,0
+
+db/migrate/20150926205546_create_org_contacts.rb,101
+class CreateOrgContacts < ActiveRecord::Migration[5.2]CreateOrgContacts1,0
+  def changechange2,0
+
+db/migrate/20150926205735_create_typ_categories.rb,105
+class CreateTypCategories < ActiveRecord::Migration[5.2]CreateTypCategories1,0
+  def changechange2,0
+
+db/migrate/20150927003655_add_typ_categories.rb,91
+class AddTypCategories < ActiveRecord::Migration[5.2]AddTypCategories1,0
+  def upup2,0
+
+db/migrate/20150926205822_create_typ_sales_taxes.rb,105
+class CreateTypSalesTaxes < ActiveRecord::Migration[5.2]CreateTypSalesTaxes1,0
+  def changechange2,0
+
+db/migrate/20150927003710_add_typ_subcategories.rb,97
+class AddTypSubcategories < ActiveRecord::Migration[5.2]AddTypSubcategories1,0
+  def upup2,0

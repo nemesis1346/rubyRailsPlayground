@@ -28,9 +28,9 @@ production:
   <<: *default
   adapter: mysql2
   encoding: utf8
-  datbase: <%= ENV['RDS_DB_NAME']%>
-  username: <%= ENV['RDS_USERNAME']%>
-  password: <%= ENV['RDS_PASSWORD']%>
-  host: <%= ENV['RDS_HOSTNAME']%>
-  port: <%= ENV['RDS_PORT']%>
+  datbase: <%= ENV['OSS_DB_NAME']%>
+  username: <%= ENV['OSS_DB_USERNAME']%>
+  password: <%= ENV['OSS_DB_PASSWORD']%>
+  host: <%= ENV['OSS_DB_URL']%>
+  port: <%= ENV['OSS_DB_PORT']%>
   database: db/production.sqlite3

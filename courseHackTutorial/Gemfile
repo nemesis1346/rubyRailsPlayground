@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.3'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-
+gem 'ripper-tags' 
 gem 'devise'
 gem 'devise_cas_authenticatable'
 # Use SCSS for stylesheets
@@ -37,6 +37,7 @@ gem 'mysql2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'dotenv-rails', groups: [:development, :test,:production]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
