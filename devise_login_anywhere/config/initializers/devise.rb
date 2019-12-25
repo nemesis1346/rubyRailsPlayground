@@ -3,18 +3,12 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-
-  #CAS CONFIGURATIONS ------------------
-  # config.cas_base_url = "https://hr.nobleprog.com/cas"
-
-
- #----------------------
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'df0d92dec825f6a1978623a6efe00432822157537759544b927ba4c43822ae7e3b58f7301f368d97ff54839b46275334d47bd9966d91ca26a7e50ae309447861'
+  # config.secret_key = 'fce7a2a344c5da7383d7d8f7fcd656e935e2fea275a642750599b313252b4eff1fa3084ed5a7c6800c5bb99b2a57c1a40770e9a0dde1c80e11a37a4ee58c068d'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -37,9 +31,6 @@ Devise.setup do |config|
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
   require 'devise/orm/active_record'
-
-  config.cas_base_url = "https://cas.myorganization.com"
-
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -123,7 +114,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '6915eaa126b4a864652474ad48a365a1762072c7e560ed4157b1bd9c0999a2083e84b6ee7ab8e3273d06099e5448379c16fde2a75c65603fe66a71a469b602fa'
+  # config.pepper = '5972c17b2aa4817a6c146e4696134866681f158ddf6292d4fc022451f3da1a1bab2f667262062dd5f6b561bc750175150864131a5aa81915e520f9700988b0a0'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
