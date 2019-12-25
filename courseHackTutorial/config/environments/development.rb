@@ -39,22 +39,24 @@ Rails.application.configure do
   # Devise section
   #config.action_mailer.default_options = {from: 'nemesis1346@hotmail.com'}
   config.action_mailer.default_options = {from: 'no-reply@projectmeal.com'}
-  config.action_mailer.default_options = {from: 'marco.maigua1346@gmail.com'}
+  # config.action_mailer.default_options = {from: 'marco.maigua1346@gmail.com'}
 
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default :charset => "utf-8"
 #GOOGLE
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
-    port: 587, 
-    domain: 'example.com',
-    user_name: 'donaldlee50@gmail.com',
-    password: 'Edward3935!',
-    authentication: 'plain',
-    enable_starttls_auto: true
-  }
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+
+  # config.action_mailer.smtp_settings = {
+  #   address: 'smtp.gmail.com',
+  #   port: 587, 
+  #   domain: 'example.com',
+  #   user_name: 'donaldlee50@gmail.com',
+  #   password: 'Edward3935!',
+  #   authentication: 'plain',
+  #   enable_starttls_auto: true
+  # }
 # #ORIGINAL
 #   config.action_mailer.smtp_settings = {
 #     address: 'smtp.gmail.com',
