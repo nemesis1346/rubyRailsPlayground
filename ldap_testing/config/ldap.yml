@@ -95,7 +95,7 @@ development:
   base: ou=employees,ou=users,dc=nobleprog
   admin_user: cn=mmaigua,dc=nobleprog 
   admin_password: trinity1346
-  ssl: true
+  ssl: false
   # <<: *AUTHORIZATIONS
 
 test:
