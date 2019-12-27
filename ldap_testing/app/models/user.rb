@@ -5,11 +5,11 @@ class User < ApplicationRecord
   attr_accessor :username
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :ldap_authenticatable, :registerable,
-         :rememberable
-
-  #  devise :database_authenticatable, :registerable,
+  # devise :ldap_authenticatable, :registerable,
   #        :rememberable
+
+   devise :database_authenticatable, :registerable,
+         :rememberable
 
   def email_required?
     false
