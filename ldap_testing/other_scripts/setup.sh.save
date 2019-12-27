@@ -1,0 +1,24 @@
+
+#!/bin/bash
+
+
+#For purging the database
+bin/rails db:en
+#bind/rails db:environment:set RAILS_ENV=production
+
+bundle install
+
+#npm install yarn -g
+RAILS_ENV=production rails assets:precompile
+bundle exec rake db:create RAILS_ENV=production
+bundle exec rake db:migrate RAILS_ENV=production
+bundle exec rake db:seed RAILS_ENV=production #this is for setting the first user$
+#bundle exec rails server
+bundle exec rails server --binding 0.0.0.0 --port 3000 -e production
+
+#for handling images
+bundle exec bin/rails runner -e production "require \"./lib/slide_hub/batch\"; Ba$
+
+
+
+

@@ -8,6 +8,9 @@ class User < ApplicationRecord
   devise :ldap_authenticatable, :registerable,
          :rememberable
 
+  #  devise :database_authenticatable, :registerable,
+  #        :rememberable
+
   def email_required?
     false
  end

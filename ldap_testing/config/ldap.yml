@@ -93,9 +93,9 @@ development:
   port: 389
   attribute: cn
   base: ou=employees,ou=users,dc=nobleprog
-  admin_user: cn=mmaigua,dc=nobleprog 
+  admin_user: cn=mmaigua,ou=employees,ou=users,dc=nobleprog
   admin_password: trinity1346
-  ssl: false
+  ssl: true
   # <<: *AUTHORIZATIONS
 
 test:
