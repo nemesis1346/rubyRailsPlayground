@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   resources :catalogues
   resources :exams
+  resources :org_people
 
   root "catalogues#index"
 end
